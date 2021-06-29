@@ -38,4 +38,4 @@ HEALTHCHECK --interval=10s --timeout=10s --retries=10 CMD kong health
 USER kong
 ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 8002 8445 8003
-STOPSIGNAL SIGQUIT
+
