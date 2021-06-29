@@ -39,4 +39,3 @@ USER kong
 ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 8002 8445 8003
 STOPSIGNAL SIGQUIT
-CMD ["kong" "docker-start"]
