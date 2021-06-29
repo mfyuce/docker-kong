@@ -1,4 +1,4 @@
-ARG KONG_BASE=kong:latest
+ARG KONG_BASE=kong-gateway:2.4.1.1-alpine
 
 
 
