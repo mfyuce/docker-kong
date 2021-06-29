@@ -33,7 +33,7 @@ RUN /plugins/install_plugins.sh
 
 HEALTHCHECK --interval=10s --timeout=10s --retries=10 CMD kong health
 
-USER kong
+#USER kong
 
 EXPOSE 8002 8445 8003
 
