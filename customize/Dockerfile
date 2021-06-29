@@ -1,4 +1,4 @@
-ARG KONG_BASE=kong-gateway:2.4.1.1-alpine
+ARG KONG_BASE=kong/kong-gateway:2.4.1.1-alpine
    
 FROM ${KONG_BASE} AS build
 
