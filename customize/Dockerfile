@@ -19,13 +19,13 @@ USER root
 RUN /usr/local/openresty/luajit/bin/luajit /packer.lua -- "$INJECTED_PLUGINS"
 
 
-FROM ${KONG_BASE}
+#FROM ${KONG_BASE}
 
-COPY --from=build /plugins /plugins
+#COPY --from=build /plugins /plugins
 
 USER root
 
-RUN /plugins/install_plugins.sh
+#RUN /plugins/install_plugins.sh
 
 HEALTHCHECK --interval=10s --timeout=10s --retries=10 CMD kong health
 
